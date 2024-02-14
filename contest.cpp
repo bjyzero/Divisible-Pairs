@@ -1,3 +1,7 @@
+// 这里要求 a_i - a_j 可以被 y 整除，则说明 a_i % y == a_j % y 
+// 而 a_i + a_j 可以被 x 整除，则如果 a_i % x = t， 那么 a_j % x = x - t
+//我们先开一个 map 记录被 y 整除相同的数字， 在 map 内部再开一个 map 记录被 x 取余后的数字
+
 #include <bits/stdc++.h>
 using namespace std;
 
